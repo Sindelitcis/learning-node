@@ -3,7 +3,7 @@ require("dotenv").config();
 const { query } = require("./db");
 
 const env = {
-    table: process.env.TABLE,
+    table: process.env.TABLE_NAME,
     chatId: process.env.TELEGRAM_CHAT_ID
 };
 
