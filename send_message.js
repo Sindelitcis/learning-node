@@ -3,7 +3,7 @@ require("dotenv").config();
 const { query } = require("./db");
 
 const env = {
-    table: process.env.TABLE_NAME,
+    tableName: process.env.TABLE_NAME,
     chatId: process.env.TELEGRAM_CHAT_ID
 };
 
@@ -20,7 +20,7 @@ const sendMessage = async (bot, request) => {
             ELSE 'ERRO/FALHA'
         END AS EnvioWS,
         COUNT(*) AS Quantidade
-    FROM ${env.table} WITH (NOLOCK)
+    FROM ${env.tableName} WITH (NOLOCK)
     WHERE TRY_CONVERT(DATE, DATA, 103) = CONVERT(DATE, GETDATE())
     GROUP BY TRY_CONVERT(DATE, DATA, 103), ENVIADO
     ORDER BY TRY_CONVERT(DATE, DATA, 103)
