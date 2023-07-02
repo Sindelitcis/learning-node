@@ -4,7 +4,8 @@ const sql = require("mssql/msnodesqlv8");
 const colors = require("colors");
 
 const config = {
-    connectionString: process.env.DB_CONNECTION
+    connectionString: process.env.DB_CONNECTION,
+    requestTimeout: 5 * 60 * 1000 // Tempo limite da consulta: 5 minutos
 };
 
 // Cria a conexão com a base de dados para usar assincronamente
