@@ -1,6 +1,6 @@
 require("dotenv").config();
-const colors = require("colors");
 
+const colors = require("colors");
 const { query } = require("./db");
 
 const env = {
