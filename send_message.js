@@ -24,7 +24,7 @@ const sendMessage = async (bot, request) => {
     FROM ${env.tableName} WITH (NOLOCK)
     WHERE TRY_CONVERT(DATE, DATA, 103) = CONVERT(DATE, GETDATE())
     GROUP BY TRY_CONVERT(DATE, DATA, 103), ENVIADO
-    ORDER BY TRY_CONVERT(DATE, DATA, 103)
+    ORDER BY ENVIADO
   `;
 
     // Realiza a consulta SQL
