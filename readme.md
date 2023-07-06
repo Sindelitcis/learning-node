@@ -1,15 +1,18 @@
-# Robô do telegram SQL
-Este projeto foi feito feito para a empresa WebHelp a fim de monitorar os envios de WS de hora em hora notificando-os através de mensagens no telegram.
+# SQL Telegram Bot
+This project was developed for WebHelp company with the purpose of monitoring WS deliveries every hour and notifying them through Telegram messages.
 
-### Requisitos
-Node v14 ou superior
-Token do seu bot criado no telegram
-Conexão com mssql server
+### Requirements
+- Node v14 or higher
+- Token for your Telegram bot
+- Connection to MSSQL server
 
-### Como rodar
-1. Você precisará baixar as dependências e bibliotecas.
+### How to run
+1. Download the required dependencies and libraries by running the following command:
 ```bash
 npm install
 ```
-2. Você deve criar um arquivo `.env` seguindo o modelo do `.env.example`.
-3. Para iniciar o projeto, basta utilizar `npm start`.
+2. Create an `.env` file following the example provided in the `.env.example` file..
+3. To start the project, use the command:
+```bash
+npm start
+```
